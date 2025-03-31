@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './App.css';
-import Timer from './Timer';
+import Clock from './Clock';
 
 /**
  * App 컴포넌트는 버튼을 통해 Timer 컴포넌트의 실행 상태를 제어하는 기능을 제공합니다.
@@ -34,7 +34,7 @@ function App() {
         >
           {componentRunning ? '컴포넌트 정지' : '컴포넌트 시작'}
         </button>
-        {componentRunning && <Timer />}
+        {componentRunning && <Clock />}
       </div>
     </>
   );

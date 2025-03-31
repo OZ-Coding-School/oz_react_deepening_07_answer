@@ -11,7 +11,7 @@ import { useEffect, useState } from 'react';
  * - 타이머가 실행 중일 때 매초마다 시간을 업데이트합니다.
  **/
 
-function Timer() {
+function Clock() {
   // 현재 시간을 상태로 관리
   const [nowTime, setNowTime] = useState(new Date().toLocaleTimeString('en-GB'));
   // 타이머 실행 여부를 상태로 관리
@@ -69,4 +69,4 @@ function Timer() {
   );
 }
 
-export default Timer;
+export default Clock;
