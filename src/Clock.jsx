@@ -33,7 +33,7 @@ function Clock() {
       setNowTime(new Date().toLocaleTimeString('en-GB'));
     }, 1000);
 
-    // 컴포넌트가 언마운트되거나 running 상태가 변경될 때 클린업업
+    // 컴포넌트가 언마운트되거나 running 상태가 변경될 때 클린업
     return () => clearInterval(interval);
   }, [running]);
 
